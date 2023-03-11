@@ -1,0 +1,22 @@
+---
+import ContactLink from "./ContactLink.astro"
+import LinkedInIcon from "../icons/LinkedInIcon.astro"
+import GitHubIcon from "../icons/GitHubIcon.astro"
+import TwitterIcon from "../icons/TwitterIcon.astro"
+---
+
+<ul role="list" aria-label="Contacts" class="flex flex-row justify-center gap-6">
+  <li>
+    <ContactLink title="LinkedIn" href="https://www.linkedin.com/in/zanaflander">
+      <LinkedInIcon />
+    </ContactLink>
+  </li>
+  <li>
+    <ContactLink title="GitHub" href="https://github.com/flanzana">
+      <GitHubIcon />
+    </ContactLink>
+  </li>
+  <li>
+    <ContactLink title="Twitter" href="https://twitter.com/flanzana"><TwitterIcon /></ContactLink>
+  </li>
+</ul>

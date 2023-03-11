@@ -1,0 +1,62 @@
+---
+import Section from "../Section.astro"
+import ProjectCard from "./ProjectCard.astro"
+import type { Props } from "./ProjectCard.astro"
+
+const projects: Props[] = [
+  {
+    title: "Žana’s cookbook",
+    description: "A cookbook of my favourite recipes: from simple soups to complicated desserts.",
+    techStack: ["React", "TypeScript", "Next.js", "TailwindCSS", "Jest", "Testing Library"],
+    hrefWeb: "https://cookbook-zana.vercel.app/",
+    hrefCode: "https://github.com/flanzana/cookbook",
+  },
+  {
+    title: "Travel packing list",
+    description:
+      "An extensive travel packing checklist for your next trip in English, Spanish and Slovenian language.",
+    techStack: ["React", "JavaScript", "i18next", "Orbit", "Flow", "Jest", "Testing Library"],
+    hrefWeb: "https://flanzana.github.io/travel-packing-list",
+    hrefCode: "https://github.com/flanzana/travel-packing-list",
+  },
+  {
+    title: "Personal portfolio",
+    description:
+      "My personal portfolio website displaying skills, interesting projects and contacts.",
+    techStack: ["Astro", "TailwindCSS"],
+    hrefWeb: "https://flanzana.github.io/",
+    hrefCode: "https://github.com/flanzana/flanzana.github.io",
+  },
+  {
+    title: "Conference workshop",
+    description:
+      "Demo for my workshop “Perks of using a design system in frontend development” at conference “Women in Tech”.",
+    techStack: ["React", "Orbit"],
+    hrefWeb: "https://codesandbox.io/s/p2rvv0q2yj?file=/src/Portfolio.js",
+    hrefCode: "https://github.com/flanzana/portfolio-orbit",
+  },
+  {
+    title: "Almería map",
+    description: "Map of the best places in Almería from Foursquare API on Google Maps API.",
+    techStack: ["React", "JavaScript", "CSS"],
+    hrefWeb: "https://flanzana.github.io/almeria-map",
+    hrefCode: "https://github.com/flanzana/almeria-map",
+  },
+  {
+    title: "Memory game",
+    description: "Classic memory game by turning over pairs of matching cards.",
+    techStack: ["JavaScript", "jQuery", "CSS", "HTML"],
+    hrefWeb: "https://flanzana.github.io/memory-game-zana",
+    hrefCode: "https://github.com/flanzana/memory-game-zana",
+  },
+]
+---
+
+<Section title="Projects">
+  <ul
+    role="list"
+    class="grid max-w-6xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"
+  >
+    {projects.map(project => <ProjectCard {...project} />)}
+  </ul>
+</Section>

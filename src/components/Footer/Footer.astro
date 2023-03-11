@@ -1,0 +1,10 @@
+---
+import Contacts from "./Contacts.astro"
+
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="mt-8 flex flex-col p-6">
+  <Contacts />
+  <span class="mt-8 text-center text-xs">Designed & Built by Žana Flander © {currentYear}</span>
+</footer>

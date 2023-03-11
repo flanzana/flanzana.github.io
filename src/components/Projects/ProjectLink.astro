@@ -1,0 +1,21 @@
+---
+import ExternalIcon from "../icons/ExternalIcon.astro"
+import GitHubIcon from "../icons/GitHubIcon.astro"
+
+interface Props {
+  href: string
+  title: string
+  isCode?: boolean
+}
+
+const { href, title, isCode } = Astro.props
+---
+
+<a
+  aria-label={title}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="rounded-full p-2 outline-none transition-all duration-300 hocus:bg-secondary-300 hocus:text-white"
+  >{isCode ? <GitHubIcon /> : <ExternalIcon />}</a
+>

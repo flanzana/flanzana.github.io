@@ -1,16 +1,9 @@
-# Žana Flander website
+# Žana Flander portfolio
 
-## Introduction
-I have created my [personal website](https://flanzana.github.io) from scratch by using [`create-react-app`](https://github.com/facebook/create-react-app) and 
-[`styled-components`](https://www.styled-components.com/). Project was initially created in JavaScript and [Flow](https://flow.org/), 
-but later I migrated it to TypeScript.
+I have created my [personal portfolio website](https://flanzana.github.io) from scratch.
 
-Website is not finished yet, because I am always adding new features or editing a style of the website. :)
+Portfolio has been redesigned and refactored many times,
+using different frameworks and libraries.
 
-## Sources
-- Icons from [Font Awesome](https://fontawesome.com/)
-- Header animation from [react-particles-js](https://github.com/Wufe/react-particles-js)
-- Purple color palette from [Color Hunt](https://colorhunt.co/palette/5272)
-- Inspiration for light and dark theme mode from [`styled-components`](https://styled-components.com/docs/advanced#theming)
-- `useWindowSize()` hook from [useHooks](https://usehooks.com/useWindowSize/)
-- `useOnClickOutside()` hook from [useHooks.ts](https://usehooks-typescript.com/react-hook/use-on-click-outside)
+The current version of my portfolio is built with
+[Astro](https://astro.build/) and [TailwindCSS](https://tailwindcss.com/).

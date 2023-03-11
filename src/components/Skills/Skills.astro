@@ -1,0 +1,40 @@
+---
+import Section from "../Section.astro"
+
+const skills: string[] = [
+  "CSS",
+  "Cypress",
+  "ESLint",
+  "Figma",
+  "Git",
+  "HTML",
+  "JavaScript",
+  "Jest",
+  "JSDoc",
+  "Next.js",
+  "React",
+  "Redux",
+  "styled-components",
+  "TailwindCSS",
+  "TypeScript",
+]
+---
+
+<Section title="Skills">
+  <p class="mb-4 max-w-prose text-center">
+    I have experience with different web development technologies and libraries.
+  </p>
+  <ul
+    role="list"
+    class="align-center flex max-w-3xl flex-row flex-wrap justify-center gap-y-2 gap-x-4 px-3 text-sm sm:gap-y-3 sm:px-12"
+  >
+    {
+      skills.map(skill => (
+        <li class="rounded-md bg-gradient-to-tr from-primary-50 to-secondary-50 px-1.5 py-0.5 font-mono text-normal-600">
+          {skill}
+        </li>
+      ))
+    }
+    <li class="align-middle">and more</li>
+  </ul>
+</Section>

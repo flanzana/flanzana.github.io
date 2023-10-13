@@ -35,27 +35,13 @@ const projects: Props[] = [
     hrefWeb: "https://codesandbox.io/s/p2rvv0q2yj?file=/src/Portfolio.js",
     hrefCode: "https://github.com/flanzana/portfolio-orbit",
   },
-  {
-    title: "Almería map",
-    description: "Map of the best places in Almería from Foursquare API on Google Maps API.",
-    techStack: ["React", "JavaScript", "CSS"],
-    hrefWeb: "https://flanzana.github.io/almeria-map",
-    hrefCode: "https://github.com/flanzana/almeria-map",
-  },
-  {
-    title: "Memory game",
-    description: "Classic memory game by turning over pairs of matching cards.",
-    techStack: ["JavaScript", "jQuery", "CSS", "HTML"],
-    hrefWeb: "https://flanzana.github.io/memory-game-zana",
-    hrefCode: "https://github.com/flanzana/memory-game-zana",
-  },
 ]
 ---
 
 <Section title="Projects">
   <ul
     role="list"
-    class="grid max-w-6xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"
+    class="grid max-w-4xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8"
   >
     {projects.map(project => <ProjectCard {...project} />)}
   </ul>

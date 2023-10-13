@@ -12,8 +12,8 @@ export interface Props {
 const { description, hrefCode, hrefWeb, techStack, title } = Astro.props
 ---
 
-<li class="flex list-none rounded-lg bg-gradient-to-tr from-primary-300 to-secondary-200 p-1">
-  <div class="w-full rounded-md bg-white/95 py-4 px-5 leading-normal">
+<li class="flex list-none rounded-lg bg-gradient-to-tr from-primary-300/70 to-secondary-200/70 p-1">
+  <div class="w-full rounded-md bg-white/95 py-4 px-5 leading-normal dark:bg-normal-800/95">
     <div class="flex flex-row items-center justify-between">
       <h3>
         <a
@@ -35,7 +35,7 @@ const { description, hrefCode, hrefWeb, techStack, title } = Astro.props
     </p>
     <ul
       role="list"
-      class="flex flex-row flex-wrap gap-y-1 gap-x-3 font-mono text-xs text-normal-600"
+      class="flex flex-row flex-wrap gap-y-1 gap-x-3 font-mono text-xs"
     >
       {techStack.map((tech: string) => <li>{tech}</li>)}
     </ul>

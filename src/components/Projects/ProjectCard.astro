@@ -33,10 +33,7 @@ const { description, hrefCode, hrefWeb, techStack, title } = Astro.props
     <p class="pt-3 pb-4">
       {description}
     </p>
-    <ul
-      role="list"
-      class="flex flex-row flex-wrap gap-y-1 gap-x-3 font-mono text-xs"
-    >
+    <ul role="list" class="flex flex-row flex-wrap gap-y-1 gap-x-3 font-mono text-xs">
       {techStack.map((tech: string) => <li>{tech}</li>)}
     </ul>
   </div>

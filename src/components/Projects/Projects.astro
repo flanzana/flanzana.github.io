@@ -39,10 +39,7 @@ const projects: Props[] = [
 ---
 
 <Section title="Projects">
-  <ul
-    role="list"
-    class="grid max-w-4xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8"
-  >
+  <ul role="list" class="grid max-w-4xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8">
     {projects.map(project => <ProjectCard {...project} />)}
   </ul>
 </Section>

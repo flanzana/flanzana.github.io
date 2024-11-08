@@ -1,9 +1,9 @@
 ---
 import Section from "../Section.astro"
 import ProjectCard from "./ProjectCard.astro"
-import type { Props } from "./ProjectCard.astro"
+import type { Props as ProjectProps } from "./ProjectCard.astro"
 
-const projects: Props[] = [
+const projects: ProjectProps[] = [
   {
     title: "Žana’s cookbook",
     description: "A cookbook of my favourite recipes: from simple soups to complicated desserts.",
@@ -40,6 +40,16 @@ const projects: Props[] = [
 
 <Section title="Projects">
   <ul role="list" class="grid max-w-4xl grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:gap-8">
-    {projects.map(project => <ProjectCard {...project} />)}
+    {
+      projects.map(project => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          techStack={project.techStack}
+          hrefWeb={project.hrefWeb}
+          hrefCode={project.hrefCode}
+        />
+      ))
+    }
   </ul>
 </Section>
